@@ -1,0 +1,368 @@
+/* Variables */
+:root {
+    --main-color: #64ffda;
+    --secondary-color: #0a192f;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto Mono', monospace;
+}
+
+/* Setup */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    counter-reset: section-counter;
+    background-color: var(--secondary-color);
+    font-family: var(--main-font);
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h1::before{
+    font-weight: normal;
+    counter-increment: section-counter 1;
+    content: "0" counter(section-counter) ". ";
+    color: var(--main-color);
+    font-family: monospace;
+    font-size: 20px;
+}
+
+section :is(h1, h2, h3) {
+    text-transform: capitalize;
+    color: #ccd6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.special-link {
+    position: relative;
+    color: var(--main-color);
+}
+
+.special-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    transition: width 0.3s;
+}
+
+.special-link:hover::before {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0 20px;
+    margin: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 25px 0;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: rgba(10, 25, 47, 0.85);
+    font-family: var(--secondary-font);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, top;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+    transition: opacity 0.3s;
+}
+
+header .logo:hover {
+    opacity: 0.8;
+}
+
+header nav {
+    counter-reset: nav-counter 0;
+}
+
+header nav a {
+    padding: 10px;
+    color: #ccd6f6;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: color 0.25s;
+}
+
+header nav a::before {
+    font-size: 14px;
+    font-family: monospace;
+    counter-increment: nav-counter 1;
+    content: "0" counter(nav-counter) ". ";
+    color: var(--main-color);
+}
+
+header nav a:hover {
+    color: var(--main-color);
+}
+
+header .list div {
+    height: 2px;
+    background-color: var(--main-color);
+    border-radius: 2px;
+}
+
+header .list div:nth-child(1) {
+    width: 100%;
+}
+
+header .list div:nth-child(2) {
+    width: 80%;
+}
+
+header .list div:nth-child(3) {
+    width: 60%;
+}
+
+header .list {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30px;
+    height: 20px;
+}
+
+header .close {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    header nav {
+        position: fixed;
+        right: min(-70%, -350px);
+        top: 0;
+        width: min(70%, 350px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: #112240;
+        transition: right 0.3s;
+    }
+
+    header .close {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        cursor: pointer;
+        width: 30px;
+        height: 24px;
+    }
+
+    header .close div {
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        border-radius: 2px;
+        background-color: var(--main-color);
+    }
+
+    header .close div:first-child {
+        transform: rotate(45deg);
+    }
+
+    header .close div:last-child {
+        transform: rotate(-45deg);
+    }
+
+    header nav a {
+        font-size: 20px;
+    }
+
+    header nav a::before {
+        font-size: 16px;
+        margin-bottom: 10px;
+        content: "0" counter(nav-counter) ".";
+        display: block;
+        text-align: center;
+    }
+
+    header .list {
+        display: flex;
+    }
+}
+
+/* Landing Page */
+main {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+
+main .container {
+    padding: 0 25px;
+}
+
+main h1 {
+    margin-left: 5px;
+    margin-bottom: clamp(10px, 2vw, 20px);
+    color: var(--main-color);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main :is(h2, h3) {
+    font-size: clamp(40px, 8vw, 80px);
+    color: #ccd6f6;
+}
+
+main h3 {
+    margin-top: 10px;
+    color: #8892b0;
+}
+
+main p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #8892b0;
+    font-size: 17px;
+    max-width: 535px;
+}
+
+main .container > a, .contact a {
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-size: 15px;
+    padding: 20px 30px;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+main .container > a:hover, .contact a:hover {
+    background-color: rgba(100,255,218,0.1);
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact h1 {
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-family: var(--secondary-font);
+}
+
+.contact h1::before {
+    font-size: 15px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: clamp(40px, 5vw, 60px);
+    color: #ccd6f6;
+}
+
+.contact p {
+    color: #8892b0;
+    max-width: 540px;
+    margin: auto;
+}
+
+.contact a {
+    margin-top: 40px !important;
+    margin: auto auto 100px;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: #a8b2d1;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+footer svg {
+    transition: color 0.5s;
+    width: 20px;
+    height: 20px;
+    color: #a8b2d1;
+}
+
+footer li {
+    cursor: pointer;
+}
+
+footer li:hover svg {
+    color: var(--main-color);
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
