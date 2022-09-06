@@ -3,7 +3,7 @@ let closeBtn = document.querySelector("header .close");
 let nav = document.querySelector("header nav");
 let header = document.querySelector("header");
 
-var scrolling = 0;
+var scrolling = scrollY;
 
 list.addEventListener("click", function () {
     nav.style.right = "0";
@@ -19,10 +19,10 @@ window.addEventListener("scroll", function () {
     else
         header.style.setProperty("box-shadow", "none");
 
-    if (scrolling > this.scrollY)
-        header.style.top = "0";
-    else
+    if (scrolling <= this.scrollY && nav.style.right !== "0px")
         header.style.top = "-95px";
+    else
+        header.style.top = "0";
 
     scrolling = this.scrollY;
 })
