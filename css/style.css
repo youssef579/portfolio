@@ -65,7 +65,7 @@ footer li:hover :is(svg, i) {
 }
 
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 section h1::before {
@@ -708,8 +708,8 @@ main .container>a:hover,
     }
 
     .projects .main-projects .project .image::before {
-        background-color: #004a48;
-        opacity: 0.9;
+        background-color: #0a192f;
+        opacity: 0.85;
     }
 
     .projects .main-projects .project article {
