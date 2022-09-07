@@ -2,8 +2,20 @@ let list = document.querySelector("header .list");
 let closeBtn = document.querySelector("header .close");
 let nav = document.querySelector("header nav");
 let header = document.querySelector("header");
-
 var scrolling = scrollY;
+
+function checkResize() {
+    if (window.innerWidth <= 767) {
+        document.querySelectorAll(".projects .main-projects article").forEach(function (x) {
+            if (x.nextElementSibling !== null)
+                x.nextElementSibling.style.height = `calc(${x.clientHeight}px + clamp(40px, 10vw , 80px))`;
+            else 
+                x.previousElementSibling.style.height = `calc(${x.clientHeight}px + clamp(40px, 10vw , 80px))`;
+        });
+    }
+}
+
+checkResize()
 
 list.addEventListener("click", function () {
     nav.style.right = "0";
@@ -26,3 +38,5 @@ window.addEventListener("scroll", function () {
 
     scrolling = this.scrollY;
 })
+
+window.addEventListener("resize", checkResize);
