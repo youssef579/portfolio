@@ -9,7 +9,7 @@ function checkResize() {
         document.querySelectorAll(".projects .main-projects article").forEach(function (x) {
             if (x.nextElementSibling !== null)
                 x.nextElementSibling.style.height = `calc(${x.clientHeight}px + clamp(40px, 10vw , 80px))`;
-            else 
+            else
                 x.previousElementSibling.style.height = `calc(${x.clientHeight}px + clamp(40px, 10vw , 80px))`;
         });
     }
@@ -40,3 +40,14 @@ window.addEventListener("scroll", function () {
 })
 
 window.addEventListener("resize", checkResize);
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+            observer.unobserve(entry.target);
+        }
+    })
+}, { threshold: 0.4 });
+
+document.querySelectorAll(".about, .contact, .projects .container :is(h1, h2, .project)").forEach(element => observer.observe(element))
