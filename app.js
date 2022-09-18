@@ -5,6 +5,10 @@ let header = document.querySelector("header");
 var scrolling = scrollY;
 
 function checkResize() {
+    // document.querySelectorAll(".projects .main-projects .project:nth-of-type(odd) .description").forEach(function (element) {
+
+    // });
+
     if (window.innerWidth <= 767) {
         document.querySelectorAll(".projects .main-projects article").forEach(function (x) {
             if (x.nextElementSibling !== null)

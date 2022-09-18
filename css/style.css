@@ -530,16 +530,16 @@ main .container>a:hover,
     color: #ccd6f6;
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
     text-align: left;
-    transform: translateX(-8vw);
-    width: calc(100% + 8vw);
+    width: calc(100% + min(8vw, 100px));
     transition: box-shadow 0.3s;
     line-height: 1.5;
+    position: relative;
+    right: min(8vw, 100px);
+    z-index: 1;
 }
 
 .projects .main-projects .project:nth-of-type(even) .description {
-    transform: unset;
-    position: relative;
-    z-index: 1;
+    right: 0;
 }
 
 .projects .main-projects .description:hover {
@@ -725,7 +725,7 @@ main .container>a:hover,
     .projects .main-projects .project .description {
         background-color: transparent;
         box-shadow: none;
-        transform: none;
+        right: 0;
         width: fit-content;
         padding: 0;
     }
