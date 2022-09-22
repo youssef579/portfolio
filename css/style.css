@@ -631,11 +631,11 @@ main .container>a:hover,
     padding: 32px 28px;
     border-radius: 5px;
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: translate 0.3s, box-shadow 0.3s;
 }
 
 .projects .additional-projects .project:hover {
-    transform: translateY(-8px);
+    translate: 0 -8px;
     box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
