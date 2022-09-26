@@ -19,6 +19,7 @@ html {
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 
 body {
@@ -65,7 +66,7 @@ footer li:hover :is(svg, i) {
 }
 
 section {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 section h1::before {
