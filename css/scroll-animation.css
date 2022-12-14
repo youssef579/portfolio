@@ -22,7 +22,7 @@
 }
 
 /* Header */
-header .container .logo {
+header :is(.logo, .list) {
     animation: show var(--main-duration) linear;
 }
 
