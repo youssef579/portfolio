@@ -1,109 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Essential meta tags -->
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Youssef Ragaey is a senior front-end developer that enjoys making stuff for web."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Normalize.css -->
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <!-- Main stylesheet file -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Animation while scrolling -->
+        <link rel="stylesheet" href="./css/scroll-animation.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;700&family=Tajawal&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;700&family=Tajawal&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./images/favicon/site.webmanifest" />
+        <!-- Page title -->
+        <title>Youssef Ragaey</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Normalize.css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <!-- Main stylesheet file -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Animation while scrolling -->
-    <link rel="stylesheet" href="./css/scroll-animation.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;700&family=Tajawal&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;700&family=Tajawal&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <!-- Page title -->
-    <title>Youssef Ragaey</title>
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <a href="#" class="logo">Youssef</a>
-            <nav>
-                <div class="close">
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <a href="#" class="logo">Youssef</a>
+                <nav>
+                    <div class="close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="#about">about</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact</a>
+                </nav>
+                <div class="list">
                     <div></div>
                     <div></div>
+                    <div></div>
                 </div>
-                <a href="#about">about</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">contact</a>
-            </nav>
-            <div class="list">
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
-        </div>
-    </header>
+        </header>
+        <!-- End Header -->
 
-    <!-- Landing Page -->
-    <main>
-        <div class="container">
-            <h1>Hi, my name is</h1>
-            <h2>Youssef Ragaey.</h2>
-            <h3>I build stuff for the web.</h3>
-            <p>I 've learned front-end development since I was 14. Now I'm focusing on improving my skills and
-                knowledge. You can see my work on <a href="https://github.com/youssef579" target="_blank" class="special-link">GitHub</a> for
-                more details. Have a nice day!</p>
-            <a href="#projects">Check out my work!</a>
-        </div>
-    </main>
+        <!-- Landing Page -->
+        <main>
+            <div class="container">
+                <h1>Hi, my name is</h1>
+                <h2>Youssef Ragaey.</h2>
+                <h3>I build stuff for the web.</h3>
+                <p>
+                    I 've learned front-end development since I was 14. Now I'm
+                    focusing on improving my skills and knowledge. You can see
+                    my work on
+                    <a
+                        href="https://github.com/youssef579"
+                        target="_blank"
+                        class="special-link"
+                    >
+                        GitHub
+                    </a>
+                    for more details. Have a nice day!
+                </p>
+                <a href="#projects">Check out my work!</a>
+            </div>
+        </main>
+        <!-- End Landing Page -->
 
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
-            <h1>About me <hr></h1>
-            <div class="main-content">
-                <div class="content">
-                    <p>Hello! My name is Youssef Ragaey, I'm 16 years old and Interested in computer science. I started programming by taking <a href="https://tinyurl.com/2kdaobma" target="_blank" class="special-link">CS50</a> course from harvard in 2020 when I decided to learn how to code and make stuff out of the box.</p><br>
-                    <p>In 2021, I started to think about the internet and how it works, so I focused on web development (especially front-end) and doing my best here.</p><br>
-                    <p>Here are a few technologies & languages I've been working with</p>
-                    <ul class="technologies">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Sass</li>
-                    </ul>
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container">
+                <h1>
+                    About me
+                    <hr />
+                </h1>
+                <div class="main-content">
+                    <div class="content">
+                        <p>
+                            Hello! My name is Youssef Ragaey, I'm 16 years old
+                            and Interested in computer science. I started
+                            programming by taking
+                            <a
+                                href="https://tinyurl.com/2kdaobma"
+                                target="_blank"
+                                class="special-link"
+                                >CS50</a
+                            >
+                            course from harvard in 2020 when I decided to learn
+                            how to code and make stuff out of the box.
+                        </p>
+                        <br />
+                        <p>
+                            In 2021, I started to think about the internet and
+                            how it works, so I focused on web development
+                            (especially front-end) and doing my best here.
+                        </p>
+                        <br />
+                        <p>
+                            Here are a few technologies & languages I've been
+                            working with
+                        </p>
+                        <ul class="technologies">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Sass</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="./images/logo.png" alt="Logo" />
+                    </div>
                 </div>
-                <div class="image"><img src="./images/logo.png" alt="Logo"></div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- End About -->
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h1>Some things I've built<hr></h1>
-            <div class="main-projects">
-                <div class="project">
-                    <div class="image"></div>
-                    <article>
-                        <p>Featured Project</p>
-                        <a href="https://youssef579.github.io/Leon-template/" target="_blank">leon template</a>
-                        <div class="description">
-                            Super creative & minimal agency web template. This is the first template from <a href="https://tinyurl.com/2m5f465l" target="_blank" class="special-link">Elzero Web School</a>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h1>
+                    Some things I've built
+                    <hr />
+                </h1>
+                <div class="main-projects">
+                    <div class="project">
+                        <div class="image"></div>
+                        <article>
+                            <p>Featured Project</p>
+                            <a
+                                href="https://youssef579.github.io/Leon-template/"
+                                target="_blank"
+                                >leon template</a
+                            >
+                            <div class="description">
+                                Super creative & minimal agency web template.
+                                This is the first template from
+                                <a
+                                    href="https://tinyurl.com/2m5f465l"
+                                    target="_blank"
+                                    class="special-link"
+                                    >Elzero Web School</a
+                                >
+                            </div>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS5</li>
+                                <li>JS</li>
+                                <li>Font Awesome</li>
+                                <li>Normalize</li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/Leon-template"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youssef579.github.io/Leon-template/"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-external-link"
+                                        >
+                                            <title>External Link</title>
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line></svg
+                                    ></a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="project">
+                        <article>
+                            <p>Featured Project</p>
+                            <a
+                                href="https://youssef579.github.io/KOPPEE-Coffee-Shop/"
+                                target="_blank"
+                                >KOPPEE - coffee shop</a
+                            >
+                            <div class="description">
+                                A fantastic coffee shop template for coffee
+                                lovers and business
+                            </div>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS5</li>
+                                <li>JS</li>
+                                <li>Font Awesome</li>
+                                <li>Normalize</li>
+                                <li>Favicon.io</li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/KOPPEE-Coffee-Shop"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youssef579.github.io/KOPPEE-Coffee-Shop/"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-external-link"
+                                        >
+                                            <title>External Link</title>
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line></svg
+                                    ></a>
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="image"></div>
+                    </div>
+                    <div class="project">
+                        <div class="image"></div>
+                        <article>
+                            <p>Featured Project</p>
+                            <a
+                                href="https://youssef579.github.io/Kasper-template/"
+                                target="_blank"
+                                >kasper template</a
+                            >
+                            <div class="description">
+                                Kasper is a creative one page template great for
+                                portfolio, agency or any other web page. This is
+                                the second template from
+                                <a
+                                    href="https://tinyurl.com/2m5f465l"
+                                    target="_blank"
+                                    class="special-link"
+                                    >Elzero Web School</a
+                                >
+                            </div>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS5</li>
+                                <li>JS</li>
+                                <li>Font Awesome</li>
+                                <li>Normalize</li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/Kasper-template"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youssef579.github.io/Kasper-template/"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-external-link"
+                                        >
+                                            <title>External Link</title>
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line></svg
+                                    ></a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <h2>Other Noteworthy Projects</h2>
+                <div class="additional-projects">
+                    <div class="project">
+                        <div class="icons">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-folder"
+                            >
+                                <title>Folder</title>
+                                <path
+                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                                ></path>
+                            </svg>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/Startright"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youssef579.github.io/Startright/"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-external-link"
+                                        >
+                                            <title>External Link</title>
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line></svg
+                                    ></a>
+                                </li>
+                            </ul>
                         </div>
+                        <a
+                            href="https://youssef579.github.io/Startright/"
+                            target="_blank"
+                            >Startright</a
+                        >
+                        <p>
+                            Startright is a creative small business website
+                            template with a distinct design that will capture
+                            everyone's attention
+                        </p>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS5</li>
+                            <li>Sass</li>
+                            <li>JS</li>
+                            <li>Font Awesome</li>
+                            <li>Normalize</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <div class="icons">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-folder"
+                            >
+                                <title>Folder</title>
+                                <path
+                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                                ></path>
+                            </svg>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/Startup-Template"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youssef579.github.io/Startup-Template/"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-external-link"
+                                        >
+                                            <title>External Link</title>
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line></svg
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a
+                            href="https://youssef579.github.io/Startup-Template/"
+                            target="_blank"
+                            >Startup template</a
+                        >
+                        <p>
+                            Modern and attractive startup template for business
+                        </p>
                         <ul class="tags">
                             <li>HTML5</li>
                             <li>CSS5</li>
@@ -111,157 +575,222 @@
                             <li>Font Awesome</li>
                             <li>Normalize</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/Leon-template" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                            <li><a href="https://youssef579.github.io/Leon-template/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="project">
-                    <article>
-                        <p>Featured Project</p>
-                        <a href="https://youssef579.github.io/KOPPEE-Coffee-Shop/" target="_blank">KOPPEE - coffee shop</a>
-                        <div class="description">
-                            A fantastic coffee shop template for coffee lovers and business
+                    </div>
+                    <div class="project">
+                        <div class="icons">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-folder"
+                            >
+                                <title>Folder</title>
+                                <path
+                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                                ></path>
+                            </svg>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/Django-Blog"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                            </ul>
                         </div>
+                        <a>Django Blog</a>
+                        <p>
+                            A blog made with django framework and some bootstrap
+                        </p>
                         <ul class="tags">
                             <li>HTML5</li>
                             <li>CSS5</li>
-                            <li>JS</li>
-                            <li>Font Awesome</li>
-                            <li>Normalize</li>
-                            <li>Favicon.io</li>
+                            <li>Js</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Bootstrap</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/KOPPEE-Coffee-Shop" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                            <li><a href="https://youssef579.github.io/KOPPEE-Coffee-Shop/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
-                        </ul>
-                    </article>
-                    <div class="image"></div>
-                </div>
-                <div class="project">
-                    <div class="image"></div>
-                    <article>
-                        <p>Featured Project</p>
-                        <a href="https://youssef579.github.io/Kasper-template/" target="_blank">kasper template</a>
-                        <div class="description">
-                            Kasper is a creative one page template great for portfolio, agency or any other web page. This is the second template from <a href="https://tinyurl.com/2m5f465l" target="_blank" class="special-link">Elzero Web School</a>
+                    </div>
+                    <div class="project">
+                        <div class="icons">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-folder"
+                            >
+                                <title>Folder</title>
+                                <path
+                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                                ></path>
+                            </svg>
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://github.com/youssef579/weather-app"
+                                        target="_blank"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-github"
+                                        >
+                                            <title>GitHub repo</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path></svg
+                                    ></a>
+                                </li>
+                            </ul>
                         </div>
+                        <a>weather app</a>
+                        <p>
+                            Explore the weather around the world anywhere and
+                            anytime in your home
+                        </p>
                         <ul class="tags">
                             <li>HTML5</li>
                             <li>CSS5</li>
-                            <li>JS</li>
-                            <li>Font Awesome</li>
-                            <li>Normalize</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>Bootstrap</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/Kasper-template" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                            <li><a href="https://youssef579.github.io/Kasper-template/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
-                        </ul>
-                    </article>
+                    </div>
                 </div>
             </div>
-            <h2>Other Noteworthy Projects</h2>
-            <div class="additional-projects">
-                <div class="project">
-                    <div class="icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/Startright" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                            <li><a href="https://youssef579.github.io/Startright/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
-                        </ul>
-                    </div>
-                    <a href="https://youssef579.github.io/Startright/" target="_blank">Startright</a>
-                    <p>Startright is a creative small business website template with a distinct design that will capture everyone's attention</p>
-                    <ul class="tags">                        
-                        <li>HTML5</li>
-                        <li>CSS5</li>
-                        <li>Sass</li>
-                        <li>JS</li>
-                        <li>Font Awesome</li>
-                        <li>Normalize</li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <div class="icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/Startup-Template" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                            <li><a href="https://youssef579.github.io/Startup-Template/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
-                        </ul>
-                    </div>
-                    <a href="https://youssef579.github.io/Startup-Template/" target="_blank">Startup template</a>
-                    <p>Modern and attractive startup template for business</p>
-                    <ul class="tags">                        
-                        <li>HTML5</li>
-                        <li>CSS5</li>
-                        <li>JS</li>
-                        <li>Font Awesome</li>
-                        <li>Normalize</li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <div class="icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/Django-Blog" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                        </ul>
-                    </div>
-                    <a>Django Blog</a>
-                    <p>A blog made with django framework and some bootstrap</p>
-                    <ul class="tags">                        
-                        <li>HTML5</li>
-                        <li>CSS5</li>
-                        <li>Js</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <div class="icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        <ul class="links">
-                            <li><a href="https://github.com/youssef579/weather-app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub repo</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                        </ul>
-                    </div>
-                    <a>weather app</a>
-                    <p>Explore the weather around the world anywhere and anytime in your home</p>
-                    <ul class="tags">                        
-                        <li>HTML5</li>
-                        <li>CSS5</li>
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
+        </section>
+        <!-- End Projects -->
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h1>What's next?</h1>
+                <h2>get in touch</h2>
+                <p>
+                    My inbox is always open for you!<br />Want to send me a
+                    message? Don't hesitate.
+                </p>
+                <a
+                    href="mailto:youssefragaa3@gmail.com?subject=Hi%20!&body=Hello%20!"
+                    target="_blank"
+                    >Say Hello</a
+                >
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- End Contact -->
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h1>What's next?</h1>
-            <h2>get in touch</h2>
-            <p>My inbox is always open for you!<br>Want to send me a message? Don't hesitate.</p>
-            <a href="mailto:youssefragaa3@gmail.com?subject=Hi%20!&body=Hello%20!" target="_blank">Say Hello</a>
-        </div>
-    </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <a
+                    href="mailto:youssefragaa3@gmail.com?subject=Hi%20!&body=Hello%20!"
+                    target="_blank"
+                    >youssefragaa3@gmail.com</a
+                >
+                <ul class="links">
+                    <li>
+                        <a target="_blank" href="https://github.com/youssef579"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-github"
+                            >
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                ></path></svg
+                        ></a>
+                    </li>
+                    <li class="discord">
+                        <a
+                            href="https://discordapp.com/users/844681311490277426"
+                            target="_blank"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 512"
+                            >
+                                <title>Discord</title>
+                                <path
+                                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codepen.io/youssef579"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-codepen"
+                            >
+                                <title>CodePen</title>
+                                <polygon
+                                    points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                                ></polygon>
+                                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                <polyline
+                                    points="22 8.5 12 15.5 2 8.5"
+                                ></polyline>
+                                <polyline
+                                    points="2 15.5 12 8.5 22 15.5"
+                                ></polyline>
+                                <line
+                                    x1="12"
+                                    y1="2"
+                                    x2="12"
+                                    y2="8.5"
+                                ></line></svg
+                        ></a>
+                    </li>
+                </ul>
+                <p>Designed & Built by <span>Youssef Ragaey</span></p>
+            </div>
+        </footer>
+        <!-- End Footer -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <a href="mailto:youssefragaa3@gmail.com?subject=Hi%20!&body=Hello%20!" target="_blank">youssefragaa3@gmail.com</a>
-            <ul class="links">
-                <li><a target="_blank" href="https://github.com/youssef579"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></li></a>
-                <li><a href="https://discordapp.com/users/844681311490277426" target="_blank"><i class="fa-brands fa-discord" title="Discord"></i></a></li>
-                <li><a target="_blank" href="https://codepen.io/youssef579"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li>
-            </ul>
-            <p>Designed & Built by <span>Youssef Ragaey</span></p>
-        </div>
-    </footer>
-    <script src="./app.js"></script>
-</body>
-
+        <!-- Main script file -->
+        <script src="./app.js"></script>
+    </body>
 </html>

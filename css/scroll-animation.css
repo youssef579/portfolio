@@ -64,7 +64,9 @@ main .container :nth-child(5) {
 }
 
 /* About and Contact and Projects */
-.about, .contact, .projects .container :is(h1, h2, .project) {
+.about,
+.contact,
+.projects .container :is(h1, h2, .project) {
     transform: translateY(30px);
     opacity: 0;
 }
