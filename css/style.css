@@ -586,17 +586,17 @@ main .container>a:hover,
 }
 
 .projects .main-projects .project:first-child .image {
-    background: url("../images/projects/leon.png") no-repeat center;
+    background: url("../images/projects/leon.webp") no-repeat center;
     background-size: cover;
 }
 
 .projects .main-projects .project:nth-child(2) .image {
-    background: url("../images/projects/koppee.png") no-repeat center;
+    background: url("../images/projects/koppee.webp") no-repeat center;
     background-size: cover;
 }
 
 .projects .main-projects .project:last-child .image {
-    background: url("../images/projects/kasper.png") no-repeat center;
+    background: url("../images/projects/kasper.webp") no-repeat center;
     background-size: cover;
 }
 
