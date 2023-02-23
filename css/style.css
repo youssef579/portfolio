@@ -196,7 +196,7 @@ header nav {
 }
 
 header nav a {
-    padding: 10px;
+    margin: 10px;
     color: #ccd6f6;
     text-transform: capitalize;
     font-size: 14px;

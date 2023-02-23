@@ -1,8 +1,8 @@
-let list = document.querySelector("header .list");
-let closeBtn = document.querySelector("header .close");
-let nav = document.querySelector("header nav");
-let header = document.querySelector("header");
-var scrolling = scrollY;
+const list = document.querySelector("header .list");
+const closeBtn = document.querySelector("header .close");
+const nav = document.querySelector("header nav");
+const header = document.querySelector("header");
+let scrolling = scrollY;
 
 function checkResize() {
     if (window.innerWidth <= 767) {

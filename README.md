@@ -3,6 +3,7 @@
 A portfolio made with Html, CSS and JavaScript
 
 ## Tools
-- Font Awesome 
+
+- Font Awesome
 - Normalize.css
 - favicon.io
