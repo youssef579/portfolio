@@ -4,6 +4,14 @@ const nav = document.querySelector("header nav");
 const header = document.querySelector("header");
 let scrolling = scrollY;
 
+function filterEffect(units) {
+    document
+        .querySelectorAll("body > *:not(header, script), .logo")
+        .forEach((element) => {
+            element.style.filter = `blur(${units}px)`;
+        });
+}
+
 function checkResize() {
     if (window.innerWidth <= 767) {
         document
@@ -21,10 +29,12 @@ checkResize();
 
 list.addEventListener("click", function () {
     nav.style.right = "0";
+    filterEffect(4);
 });
 
 closeBtn.addEventListener("click", function () {
     nav.style.right = "min(-70%, -350px)";
+    filterEffect(0);
 });
 
 window.addEventListener("scroll", function () {

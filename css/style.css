@@ -28,6 +28,10 @@ body {
     font-family: var(--main-font);
 }
 
+body>*:not(header, script) {
+    transition: filter 0.3s;
+}
+
 ::-webkit-scrollbar {
     width: 14px;
 }
@@ -183,7 +187,8 @@ header .logo {
     color: var(--main-color);
     font-weight: bold;
     font-size: 30px;
-    transition: opacity 0.3s;
+    transition-property: filter, opacity;
+    transition-duration: 0.3s;
 }
 
 header .logo:hover {
