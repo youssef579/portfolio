@@ -68,6 +68,6 @@ const observer = new IntersectionObserver(
 
 document
     .querySelectorAll(
-        ".about, .contact, .projects .container :is(h1, h2, .project)"
+        ".about, .contact, .projects .container :is(h1, h2, .project), .technology"
     )
     .forEach((element) => observer.observe(element));

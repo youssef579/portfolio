@@ -392,29 +392,65 @@ main .container>a:hover,
 }
 
 .about .content .technologies {
-    margin-top: 10px;
+    margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    row-gap: 10px;
-    transform: translateX(20px);
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 10px;
 }
 
-.about .content .technologies li {
+.about .content .technologies .technology {
     color: #8892b0;
+    background-color: #11224077;
+    border-radius: 10px;
+    padding: 10px 15px;
     font-family: var(--secondary-font);
-    font-size: 15px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition-property: translate, box-shadow;
+    transition-duration: 0.3s;
 }
 
-.about .content .technologies li::before {
-    content: '';
-    position: absolute;
-    border-width: 5px;
-    left: -20px;
-    border-style: solid;
-    border-color: transparent transparent transparent var(--main-color);
-    top: 50%;
-    transform: translateY(-50%);
+.about .content .technologies .technology:hover {
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+    translate: 0 -5px;
+}
+
+.about .content .technologies .technology__name {
+    font-size: 14px;
+    color: #ccd6f6;
+}
+
+.about .content .technologies .technology__icon {
+    padding: 8px;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+}
+
+.about .content .technologies .technology:first-child .technology__icon {
+    background-color: #007acc26;
+}
+
+.about .content .technologies .technology:nth-child(2) .technology__icon {
+    background-color: #6fa66026;
+}
+
+.about .content .technologies .technology:nth-child(3) .technology__icon {
+    background-color: #7ee1fc26;
+}
+
+.about .content .technologies .technology:nth-child(4) .technology__icon {
+    background-color: #ffffff14;
+}
+
+.about .content .technologies .technology:nth-child(5) .technology__icon {
+    background-color: #cf649a26;
+}
+
+.about .content .technologies .technology:nth-child(6) .technology__icon {
+    background-color: #ff3d0026;
 }
 
 .about .image {
