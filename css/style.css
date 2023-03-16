@@ -896,7 +896,9 @@ footer span {
     }
 }
 
-@media (max-width: 1077px) {
+@media (1200px <=width <=1350px),
+(992px <=width <=1080px),
+(width <=840px) {
     footer .links {
         position: static;
         flex-direction: row;
