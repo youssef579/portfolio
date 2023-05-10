@@ -1,18 +1,14 @@
 import { createClient, groq } from "next-sanity";
-import { cache } from "react";
 import type { Project, Technology } from "./types";
 
 const client = createClient({
-    projectId: process.env.SANITY_API_PROJECT_ID!,
-    dataset: process.env.SANITY_API_DATASET!,
-    apiVersion: process.env.SANITY_API_VERSION!,
-    useCdn: process.env.NODE_ENV === "production",
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+    apiVersion: "2023-05-04",
 });
 
-const sanityFetch = cache(client.fetch.bind(client));
-
-const getDocumentTypes = () =>
-    sanityFetch<{
+export default function getDocumentTypes() {
+    return client.fetch<{
         projects: Project[];
         technologies: Technology[];
     }>(groq`{
@@ -32,5 +28,4 @@ const getDocumentTypes = () =>
             "color": image.asset->metadata.palette.dominant.background
         }
       }`);
-
-export default getDocumentTypes;
+}

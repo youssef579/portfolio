@@ -11,6 +11,8 @@ import Footer from "@/components/sections/Footer";
 import "normalize.css";
 import "@/scss/pages/index.scss";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
     const { technologies, projects } = await getDocumentTypes();
 
