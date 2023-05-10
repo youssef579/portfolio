@@ -1,0 +1,23 @@
+@keyframes display {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    to {
+        opacity: 0.2;
+        transform: translateY(50px);
+    }
+}

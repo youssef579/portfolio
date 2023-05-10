@@ -1,0 +1,27 @@
+@use "../helpers" as *;
+
+[class*="section-heading"] {
+    font-size: clamp(15px, 5vw, 32px);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto) 1fr;
+
+    hr {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+        border: 1px solid #112240;
+    }
+
+    &::before {
+        font-weight: normal;
+        margin-right: 10px;
+        color: $main-color;
+        font-family: monospace;
+        font-size: 20px;
+    }
+}
+
+section h1::before {
+    content: "0" counter(section-counter) ".";
+    counter-increment: section-counter 1;
+}

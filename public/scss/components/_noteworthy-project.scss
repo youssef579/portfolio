@@ -1,0 +1,72 @@
+@use "../helpers" as *;
+
+.projects__noteworthy-projects {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        background-color: #112240;
+        padding: 32px 28px;
+        border-radius: 5px;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        transition: translate $duration, box-shadow $duration;
+
+        &:hover {
+            translate: 0 -8px;
+            box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .links {
+                display: flex;
+                gap: 15px;
+                transform: translateY(5px);
+            }
+        }
+
+        &__title {
+            display: block;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #ccd6f6;
+            font-size: 22px;
+            margin: 20px 0 10px;
+            width: fit-content;
+            transition: color $duration;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        &__tech-stack {
+            font-family: var(--mono);
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            color: #8892b0;
+            font-size: 12px;
+            align-items: flex-end;
+            height: 100%;
+            padding: 0;
+            align-content: flex-end;
+            gap: 10px 20px;
+
+            li {
+                font-size: 12px;
+            }
+        }
+
+        &__description {
+            font-size: 14px;
+            color: #a8b2d1;
+        }
+    }
+}

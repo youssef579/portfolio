@@ -1,0 +1,44 @@
+@use "../helpers" as *;
+
+a {
+    text-decoration: none;
+}
+
+[class*="green-link"] {
+    display: inline-block;
+    position: relative;
+    color: $main-color;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $main-color;
+        transition: width $duration;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+[class*="green-btn"] {
+    font-family: var(--mono);
+    color: $main-color;
+    border: 1px solid $main-color;
+    font-size: 14px;
+    padding: 20px 28px;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    transition-duration: 0.25s;
+    transition-property: translate, box-shadow;
+
+    &:hover {
+        box-shadow: 4px 4px 0 0 $main-color;
+        translate: -5px -5px;
+    }
+}

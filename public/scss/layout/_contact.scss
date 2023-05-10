@@ -1,0 +1,32 @@
+@use "../helpers" as *;
+
+.contact {
+    text-align: center;
+
+    &__heading {
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $main-color;
+        font-family: var(--mono);
+
+        &::before {
+            font-size: 15px;
+        }
+    }
+
+    &__subheading {
+        margin-bottom: 10px;
+        font-size: clamp(40px, 5vw, 60px);
+        color: #ccd6f6;
+    }
+
+    &__body {
+        max-width: 540px;
+        margin: auto;
+    }
+
+    &__send-email {
+        margin: 30px auto 40px;
+    }
+}

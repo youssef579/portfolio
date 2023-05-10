@@ -1,0 +1,19 @@
+[class*="container"] {
+    padding: 0 20px;
+    margin: auto;
+
+    /* Small */
+    @media (width >= 768px) {
+        width: 750px;
+    }
+
+    /* Medium */
+    @media (width >= 992px) {
+        width: 970px;
+    }
+
+    /* Large */
+    @media (width >= 1200px) {
+        width: 1170px;
+    }
+}

@@ -1,0 +1,115 @@
+@use "../helpers" as *;
+
+.about {
+    &__container {
+        max-width: 900px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 1.16fr;
+        align-items: center;
+        gap: 30px;
+
+        p {
+            font-size: 18px;
+        }
+
+        &__bio {
+            width: 100%;
+        }
+
+        &__technologies {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 10px;
+
+            .technology {
+                color: #8892b0;
+                background-color: #11224077;
+                border-radius: 10px;
+                padding: 10px 15px;
+                font-family: var(--mono);
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+                transition-property: translate, box-shadow;
+                transition-duration: $duration;
+
+                &:hover {
+                    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+                    translate: 0 -5px;
+                }
+
+                &__name {
+                    font-size: 14px;
+                    color: $heading-color;
+                }
+
+                &__icon {
+                    padding: 8px;
+                    border-radius: 6px;
+                    display: grid;
+                    place-content: center;
+                }
+            }
+        }
+
+        &__image {
+            $radius: 5px;
+            position: relative;
+            // width: clamp(200px, 30vw, 300px);
+            aspect-ratio: 1 / 1;
+
+            img {
+                object-fit: cover;
+                z-index: 2;
+                border-radius: $radius;
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: $radius;
+            }
+
+            &::after {
+                inset: 20px -20px -20px 20px;
+                background-color: transparent;
+                border: 2px solid $main-color;
+                z-index: 1;
+                transition: inset $duration;
+            }
+
+            &::before {
+                inset: 0;
+                background-color: $main-color;
+                opacity: 0.8;
+                transition: opacity $duration;
+                z-index: 3;
+            }
+
+            &:hover::before {
+                opacity: 0;
+            }
+
+            &:hover::after {
+                inset: 10px -10px -10px 10px;
+            }
+        }
+    }
+
+    @media (width <= 767px) {
+        .content {
+            grid-template-columns: 1fr;
+            justify-items: center;
+
+            &__image {
+                width: clamp(200px, 40vw, 400px);
+            }
+        }
+    }
+}

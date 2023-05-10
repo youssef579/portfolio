@@ -1,0 +1,6 @@
+@use "../helpers/" as *;
+
+p {
+    color: $text-color;
+    line-height: 1.5;
+}

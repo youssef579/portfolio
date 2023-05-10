@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+@use "../base/anchors";
+
+body {
+    padding: 0 10px;
+    height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    color: $heading-color;
+    font-size: clamp(23px, 5vw, 40px);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,173 @@
+@use "../helpers" as *;
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 25px 0;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: rgba(10, 25, 47, 0.85);
+    transition: {
+        property: box-shadow, top;
+        duration: $duration;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        letter-spacing: 1px;
+        user-select: none;
+        color: $main-color;
+        font-weight: bold;
+        font-size: 30px;
+        transition: {
+            property: filter, opacity;
+            duration: $duration;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .nav {
+        display: flex;
+        counter-reset: nav-counter 0;
+        font-family: var(--mono);
+
+        &__section-link {
+            margin: 10px;
+            color: $heading-color;
+            text-transform: capitalize;
+            font-size: 14px;
+            transition: color 0.25s;
+            transform: translateY(-20px);
+            opacity: 0;
+            animation: display $fade-duration forwards;
+
+            @for $i from 2 through 3 {
+                &:nth-of-type(#{$i}) {
+                    animation-delay: 0.2s * ($i - 1);
+                }
+            }
+
+            &::before {
+                font-size: 14px;
+                font-family: monospace;
+                counter-increment: nav-counter 1;
+                content: "0" counter(nav-counter) ". ";
+                color: $main-color;
+            }
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        &__close {
+            display: none;
+        }
+    }
+
+    &__list {
+        cursor: pointer;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 30px;
+        height: 20px;
+
+        div {
+            height: 2px;
+            background-color: $main-color;
+            border-radius: 2px;
+
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    width: 100% - ($i - 1) * 20;
+                }
+            }
+        }
+    }
+
+    &__logo,
+    &__list {
+        animation: fade-in $fade-duration linear;
+    }
+
+    @media (width <= 767px) {
+        padding: 20px 0;
+
+        .nav {
+            position: fixed;
+            right: min(-70%, -350px);
+            top: 0;
+            width: min(70%, 350px);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: #112240;
+            transition: right 0.3s;
+
+            &__section-link {
+                font-size: 20px;
+
+                &::before {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    content: "0" counter(nav-counter) ".";
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            &__close {
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 20px;
+                cursor: pointer;
+                width: 30px;
+                height: 24px;
+
+                div {
+                    position: absolute;
+                    height: 100%;
+                    width: 2px;
+                    border-radius: 2px;
+                    background-color: $main-color;
+
+                    &:first-child {
+                        transform: rotate(45deg);
+                    }
+
+                    &:last-child {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+        }
+    }
+}
+
+header .container nav a:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+header .container nav a:nth-child(4) {
+    animation-delay: 0.4s;
+}

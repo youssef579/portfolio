@@ -1,0 +1,26 @@
+@use "../helpers" as *;
+
+body {
+    padding: 0 10px;
+    height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading {
+    transform: translateY(-50px);
+    background-color: $main-color;
+    width: min(80px, 22vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    animation: loading 1s infinite alternate;
+
+    @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}) {
+            animation-delay: 0.2s * $i;
+        }
+    }
+}

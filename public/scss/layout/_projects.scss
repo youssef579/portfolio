@@ -1,0 +1,21 @@
+@use "../helpers" as *;
+
+.projects {
+    &__container {
+        max-width: 1000px;
+
+        @media (width <= 767px) {
+            max-width: 660px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+    }
+
+    &__subheading {
+        text-align: center;
+        font-size: clamp(24px, 5vw, 32px);
+        margin: 100px 0 50px;
+    }
+}

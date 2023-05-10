@@ -1,0 +1,25 @@
+@use "../helpers" as *;
+
+img[src*="/svgs/"] {
+    filter: invert(75%) sepia(9%) saturate(718%) hue-rotate(188deg)
+        brightness(95%) contrast(89%);
+    transition: filter $duration;
+
+    &:hover {
+        filter: invert(77%) sepia(60%) saturate(361%) hue-rotate(103deg)
+            brightness(104%) contrast(107%);
+    }
+}
+
+img[src*="folder"] {
+    filter: invert(77%) sepia(60%) saturate(361%) hue-rotate(103deg)
+        brightness(104%) contrast(107%);
+}
+
+footer img {
+    transition: transform $duration, filter $duration !important;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

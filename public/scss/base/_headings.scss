@@ -1,0 +1,8 @@
+@use "../helpers" as *;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        text-transform: capitalize;
+        color: $heading-color;
+    }
+}

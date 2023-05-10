@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.about,
+.contact,
+.projects :is(h1, h2, .project),
+.technology {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+:is(.about, .contact, .projects :is(h1, h2, .project), .technology).animate {
+    animation: display $fade-duration forwards;
+}
