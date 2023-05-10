@@ -1,7 +1,7 @@
 // Next Google Fonts
 import { Roboto, Roboto_Mono } from "next/font/google";
 // Vercel analytics
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
 
 const roboto = Roboto({
     subsets: ["latin"],
