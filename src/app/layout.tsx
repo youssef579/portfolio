@@ -1,7 +1,7 @@
 // Next Google Fonts
 import { Roboto, Roboto_Mono } from "next/font/google";
 // Vercel analytics
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
     subsets: ["latin"],
@@ -18,7 +18,9 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
     title: "Youssef Ragaey",
-    description: "Expert Fullstack Javascript Developer",
+    description: "An Expert Fullstack Javascript Developer",
+    authors: [{ name: "Youssef Ragaey", url: "https://github.com/youssef579" }],
+    keywords: "portfolio, web development, react developer",
 };
 
 export default function RootLayout({

@@ -2,9 +2,9 @@ import { createClient, groq } from "next-sanity";
 import type { Project, Technology } from "./types";
 
 const client = createClient({
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
-    token: process.env.SANITY_API_READ_TOKEN!,
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    token: process.env.SANITY_API_READ_TOKEN,
     apiVersion: "2023-05-04",
 });
 
