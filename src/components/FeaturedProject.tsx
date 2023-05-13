@@ -74,10 +74,10 @@ export default function FeaturedProject({
                 </ul>
                 <ul className="content__external-links">
                     <li>
-                        <a href={githubRepo} target="_blank" title="Github Repo">
+                        <a href={githubRepo} target="_blank" title="GitHub Repo">
                             <Image
                                 src="/svgs/github.svg"
-                                alt="Github Repo"
+                                alt="GitHub Repo"
                                 width={20}
                                 height={20}
                             />

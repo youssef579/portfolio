@@ -33,7 +33,7 @@ const schema = {
         },
         {
             name: "githubRepo",
-            title: "Github Repo",
+            title: "GitHub Repo",
             type: "url",
         },
         {

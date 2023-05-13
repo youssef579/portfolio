@@ -44,11 +44,11 @@ export default function NoteworthyProject({
                             <a
                                 href={githubRepo}
                                 target="_blank"
-                                title="Github Repo"
+                                title="GitHub Repo"
                             >
                                 <Image
                                     src="/svgs/github.svg"
-                                    alt="Github Repo"
+                                    alt="GitHub Repo"
                                     width={20}
                                     height={20}
                                 />

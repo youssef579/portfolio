@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
     const socialAccounts = [
         {
-            name: "Github",
+            name: "GitHub",
             href: "https://github.com/youssef579",
         },
         {
