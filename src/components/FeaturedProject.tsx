@@ -73,18 +73,28 @@ export default function FeaturedProject({
                     ))}
                 </ul>
                 <ul className="content__external-links">
+                    {githubRepo && (
+                        <li>
+                            <a
+                                href={githubRepo}
+                                target="_blank"
+                                title="GitHub Repo"
+                            >
+                                <Image
+                                    src="/svgs/github.svg"
+                                    alt="GitHub Repo"
+                                    width={20}
+                                    height={20}
+                                />
+                            </a>
+                        </li>
+                    )}
                     <li>
-                        <a href={githubRepo} target="_blank" title="GitHub Repo">
-                            <Image
-                                src="/svgs/github.svg"
-                                alt="GitHub Repo"
-                                width={20}
-                                height={20}
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a href={externalLink} target="_blank" title="External Link">
+                        <a
+                            href={externalLink}
+                            target="_blank"
+                            title="External Link"
+                        >
                             <Image
                                 src="/svgs/link.svg"
                                 alt="External Link"

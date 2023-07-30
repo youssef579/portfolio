@@ -3,8 +3,8 @@ import type { Project, Technology } from "./types";
 import { cache } from "react";
 
 const client = createClient({
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    projectId: process.env.SANITY_API_PROJECT_ID,
+    dataset: process.env.SANITY_API_DATASET,
     token: process.env.SANITY_API_READ_TOKEN,
     apiVersion: "2023-05-04",
     useCdn: process.env.NODE_ENV === "production",
