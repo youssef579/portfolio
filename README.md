@@ -1,7 +1,7 @@
 # Youssef Ragaey
 
 Hi, I'm Youssef Ragaey  
-A full stack JavaScript web developer and this is my own portfolio.
+A front-end web developer and this is my own portfolio.
 
 ## Made With
 

@@ -41,8 +41,23 @@ export default function Footer() {
                     ))}
                 </ul>
                 <p className="footer__body">
-                    Designed & Built by{" "}
-                    <span className="footer__author">Youssef Ragaey</span>
+                    Design inspired by{" "}
+                    <a
+                        className="footer__credit footer__credit--green-link"
+                        href="https://brittanychiang.com/"
+                        target="_blank"
+                    >
+                        Brittany Chiang
+                    </a>{" "}
+                    <br />
+                    Built entirely by{" "}
+                    <a
+                        className="footer__author footer__author--green-link"
+                        href="https://github.com/youssef579"
+                        target="_blank"
+                    >
+                        Youssef Ragaey
+                    </a>
                 </p>
             </div>
         </footer>
