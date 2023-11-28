@@ -18,9 +18,10 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
     title: "Youssef Ragaey",
-    description: "An Expert Front-end Developer",
+    description:
+        "A passionate front-end specialist in building responsive, interactive, accessible web apps and user interfaces.",
     authors: [{ name: "Youssef Ragaey", url: "https://github.com/youssef579" }],
-    keywords: "portfolio, web development, react developer",
+    keywords: "portfolio, web development, react developer, front-end",
 };
 
 export default function RootLayout({
